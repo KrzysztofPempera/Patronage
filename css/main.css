@@ -1,0 +1,97 @@
+/* common */
+body {
+    background-color: #f8f8f8;
+    color: #333333;
+    font-family: sans-serif;
+}
+
+button {
+    font-size: 16px;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+/* header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 72px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.header__content {
+    max-width: 800px;
+    margin: 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+.login {
+    margin: 0 0;
+    color: #666666;
+}
+
+.login:first-child {
+    margin-left: 0;
+}
+
+.login:last-child {
+    margin-right: 0;
+}
+
+.login:hover {
+    border-bottom: 2px solid currentColor;
+    color: #333333;
+}
+
+
+.login--active,
+.login:active {
+    font-weight: 700;
+    color: #333333;
+}
+
+@media screen and (min-width: 813px) {
+    .header__content {
+        margin: auto;
+    }
+}
+
+/* main */
+.container {
+    background-color: #ffffff;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 142px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.container__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+}
