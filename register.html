@@ -12,6 +12,9 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -19,31 +22,60 @@
 <body>
 
     <header class="header">
-        <div class="header__content">
-            <h1 class="title">Patronage</h1>
+        <nav class="header__content">
             <div>
-                <button id="login" class="login" tabindex="1">
-                    Login
+                <button id="home" class="navbar" tabindex="1">
+                    Strona główna
                 </button>
-                <button id="logout" class="login" tabindex="2">
-                    Logout
+                <button id="login" class="navbar" tabindex="2">
+                    Logowanie
                 </button>
-                <button id="Register" class="login" tabindex="3">
-                    Register
+                <button id="logout" class="navbar" tabindex="3">
+                    Wyloguj
                 </button>
-            </div>
-        </div>
+                <button id="register" class="navbar" tabindex="4">
+                    Rejestracja
+                </button>
+        </nav>
     </header>
     
     <main>
         <div class="container">
-            <h1 id="title" class="container__title">Test title</h1>
-            <p id="description" class="container__description">Test description description description description description description description description
-            description description</p>
+            <h1 id="title" class="container__title">Zarejestruj</h1>
+            <form action="" class="form-container">
+                <div class="input-group">
+                    <label for="username_input" class="input-group__label">
+                        Nazwa użytkownika:
+                    </label>
+                    <input type="text" id="username_input" class="input-group__input">
+                </div>
+
+                <div class="input-group">
+                    <label for="password_input" class="input-group__label">
+                        Hasło:
+                    </label>
+                    <input type="text" id="password_input" class="input-group__input">
+                </div>
+
+                <div class="input-group">
+                    <label for="email_input" class="input-group__label">
+                        Email:
+                    </label>
+                    <input type="text" id="email_input" class="input-group__input">
+                </div>
+
+                <div class="input-group">
+                    <label for="repeat_email_input" class="input-group__label">
+                        Powtórz email:
+                    </label>
+                    <input type="text" id="repeat_email_input" class="input-group__input">
+                </div>
+
+                
+                <input type="submit" class="form-container__submit" value="Zarejestruj">
+            </form>  
         </div>
     </main>
-  
-    <footer></footer>
     <script src="js/main.js"></script>
 
 </body>

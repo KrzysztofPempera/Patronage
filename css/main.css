@@ -127,7 +127,11 @@ button {
 
 .input-group__input:focus {
     outline: none;
+    border-bottom: 2px solid currentColor;
+    color: #333333;
 }
+
+
 
 .form-container__submit {
     background-color: #e7e9eb;
