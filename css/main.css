@@ -2,7 +2,7 @@
 body {
     background-color: #f8f8f8;
     color: #333333;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 button {
@@ -10,8 +10,7 @@ button {
     font-family: inherit;
     cursor: pointer;
     background-color: transparent;
-    border: none;
-    border-bottom: 2px solid transparent;
+    border: 2px solid transparent
 }
 
 /* header */
@@ -29,33 +28,33 @@ button {
     max-width: 800px;
     margin: 0 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     height: 100%;
 }
 
 
-.login {
+.navbar {
     margin: 0 0;
     color: #666666;
 }
 
-.login:first-child {
+.navbar:first-child {
     margin-left: 0;
 }
 
-.login:last-child {
+.navbar:last-child {
     margin-right: 0;
 }
 
-.login:hover {
+.navbar:hover {
     border-bottom: 2px solid currentColor;
     color: #333333;
 }
 
 
-.login--active,
-.login:active {
+.navbar--active,
+.navbar:active {
     font-weight: 700;
     color: #333333;
 }
@@ -95,3 +94,68 @@ button {
     font-size: 16px;
     text-align: center;
 }
+
+.form-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.input-group__label {
+    margin-right: 36px;
+}
+
+.input-group__input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+
+.input-group__input:focus {
+    outline: none;
+}
+
+.form-container__submit {
+    background-color: #e7e9eb;
+    border: 1px solid #e7e9eb;
+    border-radius: 4px;
+    color: #3c4043;
+    display: block;
+    margin-left: auto;
+    font-size: 14px;
+    height: 32px;
+    line-height: 27px;
+    min-width: 44px;
+    padding: 0 16px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+}
+
+.form-container__submit:hover {
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #202124;
+}
+  
+.form-container__submit:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
